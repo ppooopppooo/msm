@@ -2,3 +2,5 @@ set_prop(rild, system_radio_prop);
 
 # avc: denied { ioctl } for pid=881 comm="rild" path="/system/vendor/radio/qcril_database/qcril.db"...
 allow rild vendor_file:file ioctl;
+
+allow rild tombstone_data_file:dir search;
