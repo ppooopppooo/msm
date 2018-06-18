@@ -1,1 +1,2 @@
 allow priv_app adsprpcd_file:filesystem getattr;
+allow priv_app qemu_hw_mainkeys_prop:file r_file_perms;
