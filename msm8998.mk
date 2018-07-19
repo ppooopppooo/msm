@@ -378,5 +378,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# Call XiaomiCustom if exists
+$(call inherit-product-if-exists, vendor/XiaomiCustom/XiaomiCustom.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/msm8998-common/msm8998-common-vendor.mk)
