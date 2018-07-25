@@ -1,0 +1,2 @@
+# for /vendor/lib64/libaptX_encoder.so and /vendor/lib64/libaptXHD_encoder.so libs.
+allow bluetooth vendor_file:file { execute r_file_perms };
