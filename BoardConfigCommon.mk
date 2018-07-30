@@ -51,6 +51,9 @@ BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linaro-6.4.1-2018.05/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
 
