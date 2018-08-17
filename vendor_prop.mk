@@ -32,6 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.ras.enabled=false \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     ro.config.vc_call_vol_steps=11 \
+    ro.config.media_vol_steps=25 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio.dolby.ds2.enabled=false \
