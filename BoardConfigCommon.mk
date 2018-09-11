@@ -58,7 +58,7 @@ KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
 TARGET_BOARD_PLATFORM := msm8998
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(PLATFORM_PATH)/board-info.txt
