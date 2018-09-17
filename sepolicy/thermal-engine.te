@@ -9,4 +9,6 @@ allow thermal-engine thermal_decrypt_file:file create_file_perms;
 
 allow thermal-engine self:capability { chown fowner };
 
+allow thermal-engine proc_stat:file read;
+
 set_prop(thermal-engine, thermal_prop);
