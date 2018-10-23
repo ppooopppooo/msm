@@ -220,6 +220,10 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # IRQ
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
@@ -356,6 +360,14 @@ PRODUCT_PACKAGES += \
 
 # SDClang
 SDCLANG := true
+
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # USB
 PRODUCT_PACKAGES += \
