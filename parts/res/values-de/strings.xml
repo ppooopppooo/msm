@@ -11,9 +11,9 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Xiaomi</string>
+    <string name="app_name">XiaomiParts</string>
     <string name="advanced_settings">Xiaomi</string>
-    <string name="advanced_settings_summary">Erweitert</string> 
+    <string name="advanced_settings_summary">Erweitert</string>
     <string name="category_system">System</string>
     <string name="vib_strength_title_head">Vibrationsstärke</string>
     <string name="taptowake_title">Tippen zum aufwecken - DoubleTap2Wake</string>
