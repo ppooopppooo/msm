@@ -1,1 +1,5 @@
 set_prop(rild, system_radio_prop);
+
+allow rild vendor_file:file ioctl;
+
+allow rild tombstone_data_file:dir search;
