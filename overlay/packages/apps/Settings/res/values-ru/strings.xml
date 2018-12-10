@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 AospExtended ROM Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="assist_access_screenshot_title">Использовать снимок экрана</string>
+    <string name="assist_flash_summary">Подсвечивать края экрана, когда приложение-помощник получает доступ к тексту или снимку экрана</string>
+    <string name="disabled_by_policy_title_screen_capture">Снимок экрана делать запрещено</string>
+
+    <!-- Menu option to do WPS Push Button [CHAR LIMIT=25]-->
+    <string name="wifi_menu_wps_pbc">Кнопка WPS</string>
+    <!-- Menu option to do WPS Pin Entry [CHAR LIMIT=25]-->
+    <string name="wifi_menu_wps_pin">Ввод PIN-кода WPS</string>
+    <!-- Title for the WPS setup dialog [CHAR LIMIT=50] -->
+    <string name="wifi_wps_setup_title">Безопасная настройка Wi-Fi</string>
+    <!-- Message in WPS dialog at start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_setup_msg">Запуск WPS…</string>
+    <!-- Message in WPS dialog for PBC after start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_onstart_pbc">Нажмите кнопку \"Безопасная настройка Wi-Fi\" на маршрутизаторе. Она может называться WPS или быть отмечена этим символом:</string>
+    <!-- Message in WPS dialog for PIN after start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_onstart_pin">Введите PIN-код <xliff:g id="NUMBER">%1$s</xliff:g> на маршрутизаторе Wi-Fi. Для завершения настройки потребуется не более двух минут.</string>
+    <!-- Text displayed when WPS succeeds [CHAR LIMIT=150] -->
+    <string name="wifi_wps_complete">Ошибок нет. Подключение к сети…</string>
+    <!-- Text displayed when Wi-Fi is connected through WPS [CHAR LIMIT=150] -->
+    <string name="wifi_wps_connected">Установлено подключение к сети Wi-Fi <xliff:g id="NETWORK_NAME">%s</xliff:g></string>
+    <!-- Text displayed when WPS setup is in progress [CHAR LIMIT=150] -->
+    <string name="wifi_wps_in_progress">Выполняется настройка WPS. Для завершения потребуется не более двух минут.</string>
+    <!-- Text displayed when WPS fails to start [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_generic">Ошибка. Повторите попытку через несколько минут.</string>
+    <!-- Text displayed when WPS fails due to WEP [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_wep">Безопасная настройка беспроводного маршрутизатора (WEP) не поддерживается</string>
+    <!-- Text displayed when WPS fails to TKIP [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_tkip">Безопасная настройка беспроводного маршрутизатора (TKIP) не поддерживаются</string>
+    <!-- Text displayed when WPS fails due to authentication issues [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_auth">Ошибка аутентификации. Повторите попытку.</string>
+    <!-- Text displayed when WPS fails due to another session [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_overlap">Обнаружен другой сеанс WPS. Повторите попытку через несколько минут.</string>
+    <!-- Text displayed when WPS fails due to wifi disconnected [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_wifi_disconnected">WI-FI отключен. Настройка WPS отменена.</string>
+</resources>
