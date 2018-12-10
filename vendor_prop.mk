@@ -166,10 +166,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=false \
     ro.vendor.sensors.sta_detect=true
 
-# Spectrum (for initial config)
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.spectrum.profile=0
-
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.delta_time.enable=true
