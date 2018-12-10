@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 AospExtended ROM Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, Extended version -->
+    <string name="extended_version">Расширенная версия</string>
+    <string name="extended_version_default">Неизвестно</string>
+    <string name="keywords_extended_version">версия AEX, расширенная версия</string>
+
+    <!-- About phone screen, build date -->
+    <string name="build_date">Дата сборки</string>
+
+    <string name="keywords_build_date">дата сборки, информация о сборке</string>
+
+    <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Сканер отпечатков пальцев расположен на передней панели Вашего телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Сканер отпечатков пальцев расположен в левой части телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Найдите сканер отпечатков пальцев в правой части вашего телефона.</string>
+
+    <!-- About AospExtended -->
+    <string name="aex_about_info">О нас</string>
+    <string name="aex_about_summary">О нашем проекте и нашей команде</string>
+    <string name="aex_about_info_summary">AospExtended - это прошивка на основе AOSP, которая предоставляет пользовательский интерфейс с многими дополнительными настройками включая движкок тем Substratum. Проект был создан путём набора изменений из различных других проектов. Будучи основанным на AOSP, он обеспечивает плавную работу и без задержек прямо «из коробки». Мы постоянно добавляем новые функции и сделаем его ещё лучше в будущих обновлениях.&#35;BeExtended</string>
+    <string name="dev_info">О проекте AospExtended</string>
+
+    <string name="github_description">Посмотреть наш исходный код</string>
+
+    <string name="gplus_description">Присоединяйтесь к нашему сообществу G+</string>
+
+    <string name="telegram_description">Подпишитесь на наш Телеграм канал</string>
+    <string name="web">Центр загрузок</string>
+    <string name="web_description">Посетите наш портал загрузок</string>
+    <string name="help_translate">Перевод</string>
+    <string name="help_translate_description">Переведите на свой язык, посетив наш Crowdin</string>
+    <string name="walls">Обои</string>
+    <string name="walls_description">Получите обои от многих пользователей</string>
+    <string name="leads">Руководители группы</string>
+
+    <string name="team1_description">Лидер/Ведущий Разработчик</string>
+
+    <string name="team2_description">Разработчик</string>
+
+    <string name="team3_description">Модератор и разработчик-любитель</string>
+
+    <string name="team4_description">Разработчик</string>
+    <string name="designers">Дизайнеры</string>
+
+    <string name="designer1_description">Баннеры, Логотип, Обои</string>
+
+    <string name="designer2_description">Быстрые настройи/Летающий логотип</string>
+
+    <string name="designer3_description">Обои, Анимация загрузки</string>
+
+    <string name="designer4_description">Расширения интерфейса, Значки</string>
+
+    <string name="designer5_description">Расширения интерфейса, значки и стили часов</string>
+
+    <string name="designer6_description">Новая анимация загрузки</string>
+    <string name="maintainers">Сопровождающие</string>
+    <string name="maintainers_title">Официальные сопровождающие</string>
+    <string name="maintainers_summary">Официально поддерживаемые устройства и их сопровождающие.</string>
+
+    <!-- Maintainer section -->
+    <string name="maintainer_description">Сопровождающий: %1$s</string>
+    <string name="loading_devices">Загрузка списка устройств...</string>
+    <string name="loading_devices_failed">Ошибка загрузки списка устройств</string>
+    <string name="devices_list_empty">Список пуст. Нажмите значок, чтобы обновить</string>
+    <string name="reload_list">Обновить</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Изменения</string>
+    <string name="changelog_summary">Последние изменения</string>
+    <string name="changelog_loading">Загрузка списка изменений\u2026</string>
+    <string name="changelog_error">Не могу загрузить список изменений</string>
+
+    <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Менять местави кнопки ввода PIN-кода в случайном порядке</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+    <string name="unlock_quick_unlock_control_summary">Автоматически разблокировать при вводе правильного PIN-кода/пароля</string>
+
+    <!-- Wakeup options -->
+    <string name="wakeup_when_plugged_unplugged_title">Включение при зарядке</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Включать экран при подключении или отключении источника питания</string>
+
+    <!-- Charging vibration -->
+    <string name="charging_vibro_title">Вибрировать при зарядке</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук снимка экрана</string>
+
+    <string name="dashboard_conditions_title">Уведомления в главном меню</string>
+    <string name="summary_dashboard_conditions_enabled">Уведомления в главном меню включены</string>
+    <string name="summary_dashboard_conditions_disabled">Уведомления в главном меню выключены</string>
+
+    <string name="dashboard_suggestions_title">Подсказки в главном меню</string>
+    <string name="summary_dashboard_suggestions_enabled">Подсказки в главном меню включены</string>
+    <string name="summary_dashboard_suggestions_disabled">Подсказки в главном меню выключены</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Показать информацию о ЦП</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Доп. окошко на экранне, показывающее текущую информацию ЦП</string>
+
+    <!-- ADB debugging notifications -->
+    <string name="adb_notify">Уведомление об отладке</string>
+    <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки (ADB)</string>
+
+    <!-- Dashboard Category -->
+    <string name="dashboard_category">Параметры главного меню</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвращать случайные пробуждения</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
+
+    <!-- Home button wake -->
+    <string name="home_wake_button_title">Выход из режима сна</string>
+    <string name="home_wake_button_summary">Включать экран при нажатии кнопки «Домой»</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Системная тема</string>
+    <string name="system_theme_style_title">Стиль интерфейса</string>
+    <string name="system_theme_style_auto">На основе обоев</string>
+    <string name="system_theme_style_light">Светлый стиль</string>
+    <string name="system_theme_style_dark">Тёмный стиль</string>
+    <string name="system_theme_style_black">Чёрный стиль</string>
+    <string name="system_theme_style_extended">Расширенный стиль</string>
+    <string name="system_theme_style_chocolate">Шоколад</string>
+    <string name="theme_applied_toast">Тема оформления установлена.</string>
+    <string name="applying_theme_toast">Применение темы. Пожалуйста, подождите...</string>
+    <string name="substratum_installed_title">Системные темы недоступны, так как присутствуют слои Substratum. Пожалуйста, удалите все слои, использующие маскировку приложения Android System, чтобы продолжить.</string>
+    <string name="force_allow_system_themes_title">Разрешить системные темы и шрифты вместе с Substratum</string>
+    <string name="force_allow_system_themes_summary">Позволяет использовать темы и шрифты, несмотря на установленные слои Substratum.</string>
+    <string name="force_theme_warning_title">Внимание !</string>
+    <string name="force_theme_warning_message">Это может привести к конфликтам между темами Substratum и системными темами. Мы надеемся, что вы знаете, что вы делаете. #DontBlameUsLater :D</string>
+ 
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Сброс статистики</string>
+    <string name="battery_stats_message">Статистика батареи будет очищена</string>
+
+    <!-- AEX OTA -->
+    <string name="aex_ota_title">Обновления AEX</string>
+    <string name="aex_ota_summary">Получить последнее обновление</string>
+
+    <!-- Custom light color -->
+    <string name="custom_light_title">Цвет светодиода</string>
+    <string name="custom_light_on_time_title">Длительность свечения светодиода (мс)</string>
+    <string name="custom_light_off_time_title">Длительность затухания светодиода (мс)</string>
+    <string name="value_equals_default">умолч.</string>
+    <string name="show_light_on_zen_title">Мигать диодом в режиме «Не беспокоить»</string>
+
+    <!-- Density category -->
+    <string name="density_category">Параметры плотности</string>
+
+    <!-- Selinux -->
+    <string name="selinux_status">Статус SELinux</string>
+    <string name="selinux_status_disabled">Отключен</string>
+    <string name="selinux_status_permissive">Только предупреждения</string>
+    <string name="selinux_status_enforcing">Блокировка</string>
+
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">отключена</string>
+    <string name="sim_missing">отсутствует или ошибка</string>
+    <string name="sim_enabler_need_disable_sim">Деактивировать SIM-карту?</string>
+    <string name="sim_enabler_will_disable_sim_title">Внимание!</string>
+    <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена, а SIM <xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы уверены, что хотите продолжить?</string>
+    <string name="sim_enabler_airplane_on">Не удается выполнить операцию, пока включен режим полёта.</string>
+    <string name="sim_enabler_in_call">Невозможно выполнить операцию во время вызова.</string>
+    <string name="sim_enabler_both_inactive">Отключение всех SIM-карт невозможно</string>
+    <string name="sim_enabler_enabling">Активация\u2026</string>
+    <string name="sim_enabler_disabling">Деактивация\u2026</string>
+    <string name="sub_activate_success">Активация выполнена.</string>
+    <string name="sub_activate_failed">Ошибка при активации.</string>
+    <string name="sub_deactivate_success">Деактивация выполнена.</string>
+    <string name="sub_deactivate_failed">Ошибка при деактивации.</string>
+
+    <string name="lock_settings_picker_pattern_size_message">Выберите размер графического ключа</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Показывать ошибки ввод</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
+
+    <!-- Lock screen vibrate settings -->
+    <string name="lockscreen_vibrate_enabled_title">Вибрация</string>
+    <string name="lockscreen_vibrate_enabled_head">Вибрация при разблокировке</string>
+
+    <!-- Whether the keyguard will directly show the lock entry -->
+    <string name="directly_show_lock">Сразу предлагать ввод</string>
+    <string name="directly_show_lock_summary">Пропускать жест скольжения по экрану для разблокировки и переходить ко вводу пароля</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобильные данные</string>
+    <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
+    <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить мониторинг данных Wi\u2011Fi</string>
+
+    <string name="full_gesture_mode_title">Включить режим жестов</string>
+    <string name="full_gesture_mode_summary">Этот режим отключает кнопку «Назад» и вы можете назначить действие кнопки «Назад» с помощью смахивания влево на панели навигации. Смахивание вправо по-прежнему вызывает последнее приложение и обзор недавних приложений. Чтобы вернуться на домашний экран, вы можете нажать на любое пустое место панели навигации, а не только кнопку «Домой». Когда клавиатура активна, то удерживаете нажатие на панели навигации для того, чтобы переместить курсор.</string>
+    <string name="full_gesture_mode_dt2s_title">Выключать экран двойным касанием</string>
+    <string name="full_gesture_mode_dt2s_summary">Дважды нажмите на пустом месте панели навигации, но не на кнопке «Домой», чтобы выключить экран.</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_pref_title">Расширенный экран</string>
+    <string name="expanded_hide_nothing">Ничего не скрывать</string>
+    <string name="expanded_hide_status">Скрыть строку состояния</string>
+    <string name="expanded_hide_navigation">Скрыть панель навигации</string>
+    <string name="expanded_hide_both">Скрыть всё</string>
+    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для каждого приложения, выключите переключатель «Включено для всех».</string>
+    <string name="expanded_desktop_state">Расширенное состояние</string>
+    <string name="expanded_enabled_for_all">Включено для всех</string>
+    <string name="expanded_user_configurable">Настраивается пользователем</string>
+    <string name="expanded_desktop_style">Стиль расширенного экрана</string>
+    <string name="expanded_desktop_style_description">Выбрать режим расширенного экрана по умолчанию</string>
+    <string name="expanded_desktop_title">Настройки расширенного экрана</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Поворот экрана</string>
+    <string name="display_rotation_disabled">Выключен</string>
+    <string name="display_rotation_unit">градусов</string>
+    <string name="display_rotation_category_title">Режимы вращения</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+
+    <!-- Media gestures -->
+    <string name="prevent_ringing_option_mute_no_media">Тишина, без звука</string>
+    <string name="prevent_ringing_option_mute_no_media_summary">Вкл (тишина, без звука)</string>
+
+    <!-- Swipe fp to dismiss notifications -->
+    <string name="fp_swipe_to_dismiss_notifications_title">Проведите пальцем по сканеру отпечатка чтобы убрать уведомления</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">Чтобы очистить ваши уведомления, проведите пальцем влево или право по сканеру отпечатка пальца.</string>
+
+    <!-- Option defining the phone ringtone for slot1 on Muilti SIM device -->
+    <string name="ringtone1_title">Мелодия звонка - SIM 1</string>
+    <string name="ringtone2_title">Мелодия звонка - SIM 2</string>
+
+    <!-- Advanced night mode brightness -->
+    <string name="night_brightness_value_title">Снижение яркости в Ночном режиме</string>
+    <string name="night_auto_value_disabled">Выключено</string>
+    <string name="night_auto_value_min">Минимальная</string>
+    <string name="night_bright_low">Низкая</string>
+    <string name="night_bright_midlow">Средняя</string>
+
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">Стиль плиток быстрых настроек</string>
+    <string name="qs_tile_style_default">По умолчанию</string>
+    <string name="qs_tile_style_square">Квадрат</string>
+    <string name="qs_tile_style_rounded_square">Скруглённые углы</string>
+    <string name="qs_tile_style_squircle">«Круглый квадрат»</string>
+    <string name="qs_tile_style_tear_drop">Капля</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
+    <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+    <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Связать громкости звонка и уведомлений</string>
+</resources>
