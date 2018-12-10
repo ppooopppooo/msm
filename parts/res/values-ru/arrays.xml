@@ -13,7 +13,6 @@
     <string-array name="spectrum_profiles">
         <item>Сбалансированный</item>
         <item>Экономия батареи</item>
-        <item>Ультра экономия</item>
         <item>Производительный</item>
         <item>Игровой</item>
     </string-array>
