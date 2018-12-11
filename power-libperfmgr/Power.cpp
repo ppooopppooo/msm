@@ -225,7 +225,7 @@ bool Power::isSupportedGovernor() {
         buf = android::base::Trim(buf);
     }
 
-    if (buf != "schedutil" && buf != "sched" && buf != "performance" && buf != "powersave") {
+    if (buf != "schedutil" && buf != "sched") {
         ALOGE("Governor not supported");
         return false;
     }
