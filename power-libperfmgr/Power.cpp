@@ -51,6 +51,7 @@ Power::Power() :
         mInteractionHandler(nullptr),
         mSustainedPerfModeOn(false),
         mReady(false) {
+
     mInitThread =
             std::thread([this](){
                             android::base::WaitForProperty(kPowerHalInitProp, "1");
