@@ -385,7 +385,6 @@ PRODUCT_COPY_FILES += \
 
 # Xiaomi
 PRODUCT_PACKAGES += \
-    XiaomiDoze \
     XiaomiParts
 
 # Call the proprietary setup
