@@ -22,8 +22,6 @@
     <!-- Ambient Display -->
     <string name="ambient_display_title">Индикация событий</string>
     <string name="ambient_display_enable_title">Индикация событий</string>
-    <string name="ambient_display_always_on_title">Всегда включен</string>
-    <string name="ambient_display_always_on_summary">Показывать время, значки уведомлений и другую информацию. Увеличивает использование аккумулятора.</string>
 
     <!-- Pickup sensor -->
     <string name="pickup_sensor_title">Датчик движения</string>

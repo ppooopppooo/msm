@@ -22,8 +22,6 @@
     <!-- Ambient Display -->
     <string name="ambient_display_title">Ambient display</string>
     <string name="ambient_display_enable_title">Ambient display</string>
-    <string name="ambient_display_always_on_title">Always on</string>
-    <string name="ambient_display_always_on_summary">Show time, notification icons, and other info. Increased battery usage.</string>
 
     <!-- Pickup sensor -->
     <string name="pickup_sensor_title">Pickup sensor</string>
