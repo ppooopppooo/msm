@@ -73,7 +73,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
     final String KEY_DEVICE_DOZE = "device_doze";
-    final String KEY_DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
+    final String KEY_DEVICE_DOZE_PACKAGE_NAME = "com.xiaomi.settings";
 
     private VibratorStrengthPreference mVibratorStrength;
     private static final String HAL3_SYSTEM_PROPERTY = "persist.camera.HAL3.enabled";
