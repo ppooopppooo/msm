@@ -64,6 +64,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bluetooth.soc=cherokee \
     ro.bluetooth.hfp.ver=1.6
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.eis.enable=1 \
