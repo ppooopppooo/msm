@@ -22,4 +22,7 @@
 
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">com.xiaomi.settings/com.xiaomi.settings.doze.DozeSettingsActivity</string>
+
+    <!-- Whether to add AGPS parameter settings -->
+    <bool name="config_agps_enabled">true</bool>
 </resources>
