@@ -22,10 +22,6 @@
     <string name="display_title">显示</string>
     <string name="device_doze_title">环境显示</string>
 
-    <!-- camera -->
-    <string name="camera_title">相机</string>
-    <string name="camera_hal3_title">启用 Camera2 API</string>
-
     <!-- s2s -->
     <string name="s2s_title">滑动休眠</string>
     <string name="s2s_vib_strength_title_head">滑动休眠振动强度</string>

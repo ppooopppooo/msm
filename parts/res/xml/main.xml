@@ -59,16 +59,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="camera"
-        android:title="@string/camera_title">
-        <SwitchPreference
-            android:key="hal3"
-            android:defaultValue="true"
-            android:title="@string/camera_hal3_title"
-            android:icon="@drawable/ic_camera" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:title="@string/s2s_title">
         <ListPreference
             android:title="@string/s2s_title"

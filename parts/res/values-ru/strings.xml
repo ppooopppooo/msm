@@ -24,10 +24,6 @@
     <string name="display_title">Экран</string>
     <string name="device_doze_title">Автоматич. включение экрана</string>
 
-    <!-- camera -->
-    <string name="camera_title">Камера</string>
-    <string name="camera_hal3_title">Включить Camera2 API</string>
-
     <!-- s2s -->
     <string name="s2s_title">Жест для сна</string>
     <string name="s2s_vib_strength_title_head">Сила вибрации жеста</string>

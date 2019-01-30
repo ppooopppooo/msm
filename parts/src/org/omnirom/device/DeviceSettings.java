@@ -51,12 +51,10 @@ import org.omnirom.device.utils.FileUtils;
 public class DeviceSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String KEY_CATEGORY_CAMERA = "camera";
     private static final String KEY_CATEGORY_DISPLAY = "display";
     private static final String KEY_CATEGORY_HW_BUTTONS = "hw_buttons";
     private static final String KEY_CATEGORY_USB_FASTCHARGE = "usb_fastcharge";
 
-    private static final String ENABLE_HAL3_KEY = "hal3";
     private static final String SPECTRUM_KEY = "spectrum";
 
     private static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
@@ -76,10 +74,8 @@ public class DeviceSettings extends PreferenceFragment implements
     final String KEY_DEVICE_DOZE_PACKAGE_NAME = "com.xiaomi.settings";
 
     private VibratorStrengthPreference mVibratorStrength;
-    private static final String HAL3_SYSTEM_PROPERTY = "persist.camera.HAL3.enabled";
 
     private S2SVibratorStrengthPreference mVibratorStrengthS2S;
-    private SwitchPreference mEnableHAL3;
     private ListPreference mS2S;
     private Preference mKcalPref;
     private ListPreference mSPECTRUM;
@@ -103,10 +99,6 @@ public class DeviceSettings extends PreferenceFragment implements
                 return true;
             }
         });
-
-        mEnableHAL3 = (SwitchPreference) findPreference(ENABLE_HAL3_KEY);
-        mEnableHAL3.setChecked(SystemProperties.getBoolean(HAL3_SYSTEM_PROPERTY, false));
-        mEnableHAL3.setOnPreferenceChangeListener(this);
 
         mS2S = (ListPreference) findPreference(S2S_KEY);
         mS2S.setValue(FileUtils.getFileValue(FILE_S2S_TYPE, "0"));
@@ -152,10 +144,6 @@ public class DeviceSettings extends PreferenceFragment implements
         }
     }
 
-    private void setEnableHAL3(boolean value) {
-        SystemProperties.set(HAL3_SYSTEM_PROPERTY, value ? "1" : "0");
-    }
-
     public static void restoreSpectrumProp(Context context) {
         String spectrumStoredValue = PreferenceManager.getDefaultSharedPreferences(context).getString(SPECTRUM_KEY, "0");
         SystemProperties.set(SPECTRUM_SYSTEM_PROPERTY, spectrumStoredValue);
@@ -181,12 +169,7 @@ public class DeviceSettings extends PreferenceFragment implements
         boolean value;
         String strvalue;
 
-        if (ENABLE_HAL3_KEY.equals(key)) {
-            value = (Boolean) newValue;
-            mEnableHAL3.setChecked(value);
-            setEnableHAL3(value);
-            return true;
-        } else if (S2S_KEY.equals(key)) {
+        if (S2S_KEY.equals(key)) {
             strvalue = (String) newValue;
             FileUtils.writeValue(FILE_S2S_TYPE, strvalue);
             SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
