@@ -42,7 +42,7 @@
     <integer translatable="false" name="config_brightness_ramp_rate_fast">200</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">180</integer>
+    <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
 
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">16000</integer>
