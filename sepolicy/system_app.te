@@ -25,3 +25,6 @@ allow system_app vendor_file:file rx_file_perms;
 
 # For Xiaomi Parts
 allow system_app dalvikcache_data_file:file write;
+
+# Thermal
+allow system_app sysfs_thermal:file write;
