@@ -52,6 +52,9 @@ on fs
     mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/wlan_bt 0770 system system
 
+    chmod 0664 /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/sconfig
+
 on post-fs
     wait_for_prop sys.listeners.registered true
 
