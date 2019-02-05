@@ -209,6 +209,9 @@ PRODUCT_PACKAGES += \
 DEVICE_FRAMEWORK_MANIFEST_FILE += \
     system/libhidl/vintfdata/manifest_healthd_exclude.xml
 
+PRODUCT_PACKAGES += \
+    ThermalController
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
