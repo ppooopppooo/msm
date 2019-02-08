@@ -69,6 +69,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.xm.green.r=0.97 \
 	persist.dualcam.lpm.enable=1 \
 	vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCameraTele,org.lineageos.snap \
+	persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCameraTele,org.lineageos.snap \
 	vidc.enc.dcvs.extra-buff-count=2 \
 	camera.shutter_sound.blacklist=com.android.camera
 
