@@ -55,6 +55,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.audio.use.sw.ape.decoder=true \
 	vendor.voice.path.for.pcm.voip=true
 
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.audio.dirac.speaker=true
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 	qcom.bluetooth.soc=cherokee \
