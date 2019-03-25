@@ -51,8 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=true \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
-    vendor.audio.use.sw.ape.decoder=true \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.audio.use.sw.ape.decoder=true
 
 # Dirac
 PRODUCT_PROPERTY_OVERRIDES += \
