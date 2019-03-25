@@ -18,7 +18,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=2 \
     audio.deep_buffer.media=true \
-    audio.deep_buffer.media=true \
     audio.cts.media=false \
     audio.offload.min.duration.secs=30 \
     audio.offload.video=true \
