@@ -15,7 +15,7 @@
 #
 
 BOARD_VENDOR := xiaomi
-
+SELINUX_IGNORE_NEVERALLOWS := true
 PLATFORM_PATH := device/xiaomi/msm8998-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
