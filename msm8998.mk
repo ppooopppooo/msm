@@ -348,6 +348,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
+# SDClang
+SDCLANG := true
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.1-service.xiaomi_msm8998
