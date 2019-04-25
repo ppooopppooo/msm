@@ -592,6 +592,17 @@ vendor/lib64/sensors.ssc.so
 # Thermal - from OnePlus5T PKQ1.180716.001
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
 
+# Soter
+-app/SoterService/SoterService.apk
+framework/vendor.qti.hardware.soter-V1.0-java.jar
+lib/vendor.qti.hardware.soter@1.0.so:vendor/lib/vendor.qti.hardware.soter@1.0.so
+lib64/vendor.qti.hardware.soter@1.0.so:vendor/lib64/vendor.qti.hardware.soter@1.0.so
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/bin/vendor.qti.hardware.soter@1.0-provision
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine-8998-high.conf
