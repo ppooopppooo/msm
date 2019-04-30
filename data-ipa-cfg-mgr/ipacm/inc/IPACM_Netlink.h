@@ -53,17 +53,13 @@ extern "C"
 #include <sys/socket.h>
 #include <linux/socket.h>
 #include <inaddr.h>
+#define sockaddr_storage __kernel_sockaddr_storage
 #include <linux/if.h>
 #include <linux/if_addr.h>
 #include <linux/rtnetlink.h>
 #include <linux/netlink.h>
 #include <netinet/in.h>
 #include "IPACM_Defs.h"
-
-struct sockaddr_storage {
-  __kernel_sa_family_t ss_family;
-  char __data[_K_SS_MAXSIZE - sizeof(unsigned short)];
-} __attribute__((aligned(_K_SS_ALIGNSIZE)));
 
 #define MAX_NUM_OF_FD 10
 #define IPA_NL_MSG_MAX_LEN (2048)
