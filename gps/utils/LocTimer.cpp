@@ -34,12 +34,8 @@
 #include <errno.h>
 #include <sys/timerfd.h>
 #include <sys/epoll.h>
-<<<<<<< HEAD
 #include <log_util.h>
 #include <loc_timer.h>
-=======
-#include <unistd.h>
->>>>>>> 6bff3f2... msm8998-common: Build libgps.utils with VNDK.
 #include <LocTimer.h>
 #include <LocHeap.h>
 #include <LocThread.h>
