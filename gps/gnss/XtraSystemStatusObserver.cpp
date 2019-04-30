@@ -32,7 +32,6 @@
 #include <sys/un.h>
 #include <errno.h>
 #include <ctype.h>
-#include <unistd.h>
 #include <cutils/properties.h>
 #include <math.h>
 #include <arpa/inet.h>
