@@ -212,14 +212,7 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     return sInstance;
 }
 
-<<<<<<< HEAD
-=======
-void setFpVendorProp(const char *fp_vendor) {
-    property_set("persist.vendor.sys.fp.vendor", fp_vendor);
-    property_set("ro.boot.fpsensor", fp_vendor);
-}
 
->>>>>>> 780b3f38... whyred: ifaa: Update for mlipay 1.1 changes
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
 {
     const hw_module_t *hw_module = nullptr;
