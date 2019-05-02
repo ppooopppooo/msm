@@ -555,6 +555,7 @@
             <name>IService</name>
             <instance>default</instance>
         </interface>
+    </hal>
     <hal format="hidl">
 	<name>vendor.qti.hardware.soter</name>
         <transport>hwbinder</transport>

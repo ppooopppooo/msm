@@ -16,7 +16,6 @@ GNSS_CFLAGS := \
     -Wno-error=switch \
     -Wno-error=date-time
 
-ifneq ($(BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE),)
 ifneq ($(BUILD_TINY_ANDROID),true)
 
 LOCAL_PATH := $(call my-dir)
