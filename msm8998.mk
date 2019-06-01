@@ -216,6 +216,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThermalController
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -336,6 +340,7 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
@@ -354,6 +359,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+ PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # USB
 PRODUCT_PACKAGES += \
