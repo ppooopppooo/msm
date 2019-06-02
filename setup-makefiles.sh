@@ -24,9 +24,9 @@ INITIAL_COPYRIGHT_YEAR=2017
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ROM_ROOT="${MY_DIR}/../../.."
+SYBERIA_ROOT="${MY_DIR}"/../../..
 
-HELPER="${ROM_ROOT}"/buildtools/extract_utils.sh
+HELPER="${SYBERIA_ROOT}"/vendor/syberia/build/tools/extract_utils.sh
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -34,7 +34,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ROM_ROOT}" true
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${SYBERIA_ROOT}" true
 
 # Copyright headers and guards
 write_headers "chiron sagit"

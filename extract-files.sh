@@ -24,7 +24,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ROM_ROOT="${MY_DIR}/../../.."
 
-HELPER="${ROM_ROOT}"/buildtools/extract_utils.sh
+HELPER="${SYBERIA_ROOT}"/vendor/syberia/build/tools/extract_utils.sh
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -94,7 +94,7 @@ function blob_fixup() {
 }
 
 # Initialize the helper for common device
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ROM_ROOT}" true "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${SYBERIA_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
