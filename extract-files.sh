@@ -79,15 +79,12 @@ function blob_fixup() {
         sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${2}"
         ;;
     vendor/bin/mlipayd@1.1)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
     vendor/lib64/libmlipay@1.1.so)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
     vendor/lib64/libmlipay.so)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
 	esac
