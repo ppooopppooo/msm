@@ -22,13 +22,10 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ROM_ROOT="${MY_DIR}/../../.."
+LINEAGE_ROOT="${MY_DIR}/../../.."
 
-HELPER="${ROM_ROOT}"/buildtools/extract_utils.sh
-if [ ! -f "${HELPER}" ]; then
-    echo "Unable to find helper script at ${HELPER}"
-    exit 1
-fi
+HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+
 source "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
@@ -62,21 +59,17 @@ function blob_fixup() {
     etc/permissions/qti_libpermissions.xml)
         sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "${2}"
         ;;
-    vendor/lib/libMiCameraHal.so)
-        sed -i "s|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g" "${2}"
-        patchelf --replace-needed "libicuuc.so" "libicuuc-v27.so" "${2}"
+    vendor/lib/libFaceGrade.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
         ;;
-    vendor/lib/hw/camera.msm8998.so)
-        patchelf --replace-needed "libminikin.so" "libminikin-v27.so" "${2}"
+    vendor/lib/libarcsoft_beauty_shot.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
         ;;
-    vendor/lib/libicuuc-v27.so)
-        patchelf --set-soname "libicuuc-v27.so" "${2}"
+    vendor/lib/libmmcamera2_stats_modules.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
         ;;
-    vendor/lib/libminikin-v27.so)
-        patchelf --set-soname "libminikin-v27.so" "${2}"
-        ;;
-    vendor/lib/libmmcamera2_sensor_modules.so)
-        sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${2}"
+    vendor/lib/libmpbase.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
         ;;
     vendor/bin/mlipayd@1.1)
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
@@ -84,14 +77,11 @@ function blob_fixup() {
     vendor/lib64/libmlipay@1.1.so)
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
-    vendor/lib64/libmlipay.so)
-        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
-        ;;
 	esac
 }
 
 # Initialize the helper for common device
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ROM_ROOT}" true "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
@@ -99,7 +89,7 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     source "${MY_DIR}/../${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ROM_ROOT}" false "${CLEAN_VENDOR}"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
             "${KANG}" --section "${SECTION}"
